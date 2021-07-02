@@ -33,9 +33,7 @@ body {
     }
 
     td {
-        /*border:1px solid green;*/
+        border:1px solid green;
     }
 
-    tr {
-        border-bottom-style: 1px dotted red;
-    }
+    
