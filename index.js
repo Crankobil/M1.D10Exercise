@@ -114,8 +114,29 @@ const addRow = function () {
   const addClassToRow = function () {
     const tableRows = document.querySelectorAll("tr");
     trs.forEach((tr) => {
-      tableRows.classList.add("change");
+      tableRows.classList.add("test");
     });
   };
  
- 
+  const redBackground = () => {
+      const links = document.querySelectorAll("a")
+      links.forEach((link) => {
+          links.classList.add("red-background");
+    });
+  };
+
+  window.onload = () => {
+      console.log("page loaded")
+  };
+
+  const addListItem = () => {
+    const unorderedList = document.querySelectorAll("ul")
+    const listItem = document.createElement("li");
+    listItem.innerText = "New list item created";
+    unorderedList.appendChild(listItem);
+  }
+
+  const emptyList = () => {
+    const unorderedList = document.querySelectorAll("ul")
+    unorderedList.innerText = ""
+  } ;
