@@ -114,7 +114,7 @@ const addRow = function () {
   const addClassToRow = function () {
     const tableRows = document.querySelectorAll("tr");
     trs.forEach((tr) => {
-      tableRows.classList.add("test");
+      tableRows.classList.add("change");
     });
   };
  
