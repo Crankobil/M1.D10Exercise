@@ -85,3 +85,37 @@ function returnLargestSum(array1, array2) {
 }
 
 /*console.log(returnLargestSum([20,30],[40,60]))*/
+
+let container = document.getElementById("container");
+
+let allTableData = document.querySelectorAll("td");
+
+allTableData.forEach((td) => {
+    td.innerText = "Change td"
+})
+
+const chageHeading = (text) => {
+    const heading = document.querySelector("h1")
+    heading.innerText = text
+}
+
+const addRow = function () {
+    const tbody = document.querySelector("tbody");
+    const tr = document.createElement("tr");
+    for (let i = 0; i < 5; i++) {
+      const td = document.createElement("td");
+      td.innerText = i + 1;
+      tr.appendChild(td);
+    }
+    tbody.appendChild(tr);
+  };
+  addRow();
+ 
+  const addClassToRow = function () {
+    const tableRows = document.querySelectorAll("tr");
+    trs.forEach((tr) => {
+      tableRows.classList.add("test");
+    });
+  };
+ 
+ 
