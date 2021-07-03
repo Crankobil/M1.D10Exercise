@@ -83,6 +83,7 @@ function returnLargestSum(array1, array2) {
 
   return sum1 >= sum2 ? sum1 : sum2;
 }
+/*<--------------------------------DOM--------------------------------------->
 
 /*console.log(returnLargestSum([20,30],[40,60]))*/
 
